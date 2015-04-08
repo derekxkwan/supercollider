@@ -1,4 +1,4 @@
-DkStretch1 {
+DkStretch {
 	*ar {|in, rate =0.01, freqScale = 1, thresh = 0.5, maxLen = 5, mul = 1|
 		var recBuf, onsetBuf, recPhase, playPhase, sig, bufLen, onset;
 		bufLen = SampleRate.ir*maxLen;
