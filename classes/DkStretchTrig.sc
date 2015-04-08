@@ -1,5 +1,5 @@
 DkStretchTrig {
-*ar {|in, t_trig, rate =0.01, freqScale = 1, thresh = 0.5, maxLen = 5, mul = 1|
+*ar {|in, t_trig, rate =0.01, freqScale = 1, maxLen = 5, mul = 1|
 var recBuf, recPhase, playPhase, sig, bufLen;
 bufLen = SampleRate.ir*maxLen;
 recBuf = LocalBuf(bufLen);
