@@ -1,4 +1,4 @@
-DkRepeat1 {
+DkRepeat {
 	*ar {|in, delLen = 0.05, envLen = 1, thresh = 0.5, dry=1, wet =1, doneAction = 0|
 		var fft, onset, del, env, sig;
 	fft = FFT(LocalBuf(512), in);
