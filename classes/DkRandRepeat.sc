@@ -1,4 +1,4 @@
-DkRandRepeat1 {
+DkRandRepeat {
 	*ar {|in, randFreq = 0.25, delLenMin = 0.02, delLenMax = 0.08, envLenMin = 0.5, envLenMax = 1.5, thresh = 0.5, dry=1, wet =1, doneAction = 0|
 		var trig, fft, onset, del, env, sig;
 			trig = Impulse.ar(randFreq);
