@@ -4,7 +4,7 @@ DkRandRepeat {
 			trig = Impulse.ar(randFreq);
 	fft = FFT(LocalBuf(512), in);
 	onset = Onsets.kr(fft, thresh);
-	del = DelayN.ar(LocalIn.ar(1)+in, 0.2, TRand.kr(delLenMin, delLenMax, onset));
+	del = DelayN.ar(LocalIn.ar(1)+in, delLenMax, TRand.kr(delLenMin, delLenMax, onset));
 
 	env = EnvGen.ar(Env.linen(0.001, TRand.kr(envLenMin,envLenMax, onset), 0.01), onset, doneAction: doneAction);
 	LocalOut.ar(del*env);
